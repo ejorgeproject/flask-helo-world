@@ -7,9 +7,9 @@ app = Flask(__name__)
 def index():
   return '<h1>Hello World!</h1><a href="/teste">link</a>'
 
-@app.route('/teste')
-def teste():
-  return '<h2 style="color: red;">Teste</h2>'
+@app.route('/unifran')
+def unifran():
+  return '<h2 style="color: red;">Universidade de Franca</h2>'
 
 if __name__ == '__main__':
   port = int(os.environ.get('PORT', 5000))
